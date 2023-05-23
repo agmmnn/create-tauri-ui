@@ -2,6 +2,8 @@
 
 # create-tauri-ui
 
+Create [Tauri UI](https://github.com/agmmnn/tauri-ui) in a few steps.
+
 ```bash
 npx create-tauri-ui@latest
 
