@@ -1,0 +1,62 @@
+{
+  "name": "create-tauri-ui",
+  "version": "0.1.0",
+  "description": "Create modern Tauri desktop apps with ease using shadcn/ui, Next.js & Vite in just a few simple steps.",
+  "main": "index.js",
+  "author": "agmmnn",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild",
+    "start": "unbuild --stub && node index.js",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "format": "npx prettier --write . --ignore-path .gitignore ",
+    "taze": "taze minor -r -w -i false",
+    "taze:major": "taze major -r -w -i false"
+  },
+  "bin": {
+    "create-tauri-ui": "index.js"
+  },
+  "files": [
+    "index.js",
+    "templates",
+    "dist"
+  ],
+  "keywords": [
+    "tauri",
+    "desktop",
+    "app"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agmmnn/create-tauri-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/agmmnn/create-tauri-ui/issues"
+  },
+  "homepage": "https://github.com/agmmnn/create-tauri-ui",
+  "dependencies": {
+    "@clack/core": "^0.3.2",
+    "@clack/prompts": "^0.6.3",
+    "@iarna/toml": "^2.2.5",
+    "js-yaml": "^4.1.0",
+    "picocolors": "^1.0.0",
+    "sisteransi": "^1.0.5",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.5",
+    "@types/minimist": "^1.2.2",
+    "@types/node": "^20.2.3",
+    "@types/prompts": "^2.4.4",
+    "commander": "^10.0.1",
+    "cross-spawn": "^7.0.3",
+    "kolorist": "^1.8.0",
+    "minimist": "^1.2.8",
+    "prompts": "^2.4.2",
+    "typescript": "^5.0.4",
+    "unbuild": "^1.2.1"
+  }
+}
