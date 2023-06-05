@@ -31,9 +31,9 @@ pnpm create tauri-ui my-tauri-app --template sveltekit
 
 Currently supported template presets include:
 
-- `Vite + React`
-- `Next.js`
-- `SvelteKit`
+- [`Vite + React`](https://github.com/agmmnn/create-tauri-ui/tree/master/templates/vite)
+- [`Next.js`](https://github.com/agmmnn/tauri-ui/)
+- [`SvelteKit`](https://github.com/agmmnn/create-tauri-ui/tree/master/templates/sveltekit) ([@huntabyte/shadcn-svelte](https://github.com/huntabyte/shadcn-svelte))
 
 You can use `.` for the project name to scaffold in the current directory.
 
