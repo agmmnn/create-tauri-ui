@@ -1,4 +1,4 @@
-![](https://i.imgur.com/Esdi7tr.png)
+![](https://i.imgur.com/ONV0z45.png)
 
 # create-tauri-ui
 
@@ -23,16 +23,17 @@ You can also directly specify the project name and the template you want to use 
 npm create tauri-ui@latest my-tauri-app -- --template vite
 
 # yarn
-yarn create tauri-ui my-tauri-app --template vite
+yarn create tauri-ui my-tauri-app --template next
 
 # pnpm
-pnpm create tauri-ui my-tauri-app --template vite
+pnpm create tauri-ui my-tauri-app --template sveltekit
 ```
 
 Currently supported template presets include:
 
-- `Vite`
+- `Vite + React`
 - `Next.js`
+- `SvelteKit`
 
 You can use `.` for the project name to scaffold in the current directory.
 
