@@ -9,7 +9,7 @@ import minimist from "minimist";
 import prompts from "prompts";
 import toml from "@iarna/toml";
 import yaml from "js-yaml";
-import { blue, gray, lightGreen, red, reset } from "kolorist";
+import { blue, gray, green, lightGreen, red, reset } from "kolorist";
 
 import {
   formatTargetDir,
@@ -30,10 +30,13 @@ const argv = minimist<{
 const cwd = process.cwd();
 
 const FRAMEWORKS: Framework[] = [
-  { name: "vite", display: "Vite ⚡", color: blue },
+  { name: "vite", display: "Vite + React ⚡", color: blue },
   { name: "next", display: "Next.js ▲", color: lightGreen },
+  { name: "sveltekit", display: "SvelteKit ⚡", color: green },
 ];
 const TEMPLATES = FRAMEWORKS.map((f) => f.name);
+
+// const TARGETOS = ["macOS", "Windows", "Linux"];
 
 const renameFiles: Record<string, string | undefined> = {
   _gitignore: ".gitignore",
